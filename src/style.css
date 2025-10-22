@@ -1,0 +1,59 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --size: min(4lvw, 5lvh);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100dvh;
+
+  background-color: black;
+}
+
+button {
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: transparent;
+  border: none;
+  pointer-events: all;
+  cursor: pointer;
+
+  padding: 100vw;
+}
+
+#funnyyonkagorplay img {
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+
+  width: min(50vw, 50vh);
+  height: min(50vw, 50vh);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(24, var(--size));
+}
+
+img {
+  width: var(--size);
+  height: var(--size);
+}
+
+#funnyyonkagorcredits {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  color: white;
+}
