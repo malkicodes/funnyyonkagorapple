@@ -52,8 +52,15 @@ img {
 
 #funnyyonkagorcredits {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
-  opacity: 0.5;
-  color: white;
+  color: #ffffff40;
+}
+
+#funnyyonkagorcredits:hover {
+  color: #ffffff80;
+}
+
+a {
+  color: inherit;
 }
